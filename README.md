@@ -1,6 +1,6 @@
-#zcool
+# zcool
 
-#依赖
+# 依赖
 ##### router
 - react-router-dom
 - @types/react-router-dom
@@ -15,7 +15,7 @@
 - create-react-app zcool --typescript
 
 
-#技术栈
+# 技术栈
 ```
 react + react-router + redux + redux-saga + typescript
 
