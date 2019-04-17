@@ -1,17 +1,17 @@
 # zcool
 
 # 依赖
-##### router
+#### router
 - react-router-dom
 - @types/react-router-dom
-##### redux
+#### redux
 - redux
 - react-redux
 - redux-devtools-extension
-##### less
+#### less
 - less
 - less-loader
-##### typeTcript
+#### typeTcript
 - create-react-app zcool --typescript
 
 
