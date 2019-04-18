@@ -1,13 +1,6 @@
-import React from 'react';
-import { Route } from 'react-router-dom';
 import HeaderRouter from './header';
+import InterviewRouter from './interview';
 
-export default class Routers extends React.Component {
-  render() {
-    return (
-      <>
-        <HeaderRouter/>
-      </>
-    )
-  }
-}
+export { HeaderRouter, InterviewRouter }
+
+
