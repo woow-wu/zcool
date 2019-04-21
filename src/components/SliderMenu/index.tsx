@@ -11,7 +11,7 @@ export default class SliderMenu extends React.Component {
       <div className="slider-wrap">
         {
           interviewInstance.map((item, index) => {
-            return <div>{item.title}</div>
+            return <div key={index}>{item.title}</div>
           })
         }
       </div>

@@ -105,12 +105,30 @@ module.exports = function(webpackEnv) {
       },
     ].filter(Boolean);
     if (preProcessor) {
-      loaders.push({
+      const loader = {
         loader: require.resolve(preProcessor),
         options: {
           sourceMap: isEnvProduction && shouldUseSourceMap,
         },
-      });
+      };
+      if (preProcessor === 'less-loader') {
+        loader.options = {
+          ...loader.options,
+          modifyVars: {
+            'primary-color': '#46bd87',
+            'link-color': '#1DA57A',
+            'border-radius-base': '2px',
+          },
+          javascriptEnabled: true,
+        }
+      }
+      loaders.push(loader)
+      // loaders.push({
+      //   loader: require.resolve(preProcessor),
+      //   options: {
+      //     sourceMap: isEnvProduction && shouldUseSourceMap,
+      //   },
+      // });
     }
     return loaders;
   };

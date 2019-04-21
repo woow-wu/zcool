@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-
+import { Button } from 'antd';
 
 interface IR {
   path: string;
@@ -31,9 +31,10 @@ export default class InterviewRouter extends React.Component {
         const { interviewRouter } = this.state;
         return (
             <>
-                {
-                    interviewRouter.map(this.showHeaderRoutes)
-                }
+              {
+                interviewRouter.map(this.showHeaderRoutes)
+              }
+              <Button type="primary">按钮</Button>
             </>
         )
     }
