@@ -12,5 +12,6 @@ docker rm -f zcool
 
 # 映射容器 - 启动服务
 docker run -d --name=zcool \
+-p 8088:80 \
 -v $PWD/dist:/usr/share/nginx/html \
 8cf1bfb43ff5
